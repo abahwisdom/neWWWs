@@ -1,0 +1,29 @@
+.navig{
+    position: fixed;
+    right: 10%;
+    z-index: 200;
+    top: 44px;
+    color: #64ffda;
+    font-family: monospace;
+    font-size: 15px;
+    ;
+  
+    *{
+      cursor: pointer
+    }
+    
+}
+
+.navig-other{
+    color: #64ffda;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: right;
+    margin-right: 27px;
+    margin-top: 20px;
+    ;
+  
+    *{
+      cursor: pointer
+    }
+}
