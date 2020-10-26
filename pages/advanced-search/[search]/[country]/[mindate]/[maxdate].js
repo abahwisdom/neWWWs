@@ -2,9 +2,9 @@ import PostSummary from "../../../../../components/post-summary";
 import Navigation from '../../../../../components/nav-other'
 import Axios from "axios";
 import React from 'react'
-import '../../../../../styles/pages.scss'
+// import '../../../../../styles/pages.scss'
 import AdvancedSearchForm from "../../../../../components/advanced-search";
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 
 
 export default function AdvancedSearch ({articles, search, country}){

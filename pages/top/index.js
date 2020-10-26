@@ -1,7 +1,7 @@
 import PostSummary from "../../components/post-summary";
 import Axios from "axios";
 import React from 'react'
-import '../../styles/pages.scss'
+// import '../../styles/pages.scss'
 import Navigation from '../../components/nav-other'
 
 export default function Top ({articles}){

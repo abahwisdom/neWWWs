@@ -1,6 +1,6 @@
 import PostSummary from "../../components/post-summary";
 import React, { useEffect, useState } from 'react'
-import '../../styles/pages.scss'
+// import '../../styles/pages.scss'
 import Navigation from '../../components/nav-other'
 
 export default function Bookmarks (){

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import '../styles/landing.scss'
+// import '../styles/landing.scss'
 import React from 'react'
 import {Button, Container} from 'react-bootstrap'
 import Typical from 'react-typical'
