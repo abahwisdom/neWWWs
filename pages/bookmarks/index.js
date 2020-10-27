@@ -2,10 +2,11 @@ import PostSummary from "../../components/post-summary";
 import React, { useEffect, useState } from 'react'
 // import '../../styles/pages.scss'
 import Navigation from '../../components/nav-other'
+import { Container, Jumbotron } from "react-bootstrap";
 
 export default function Bookmarks (){
     
-    const [articles, setArticles]= useState([]);
+    const [articles, setArticles]= useState(undefined);
     const [monitorRender, setRender]= useState(false);
     useEffect(()=>{
         setArticles(JSON.parse(localStorage.getItem('news-bookmarks')));
@@ -17,7 +18,7 @@ export default function Bookmarks (){
         <h1 className='mt-auto text-right blog-name'>neWWWs</h1>
         <h4 className='ml-4 text-my-light-blue'>Bookmarks </h4>
         {
-            articles.map(article=>{
+            articles!==undefined && articles!==null ? articles.map(article=>{
                 return(
                  <React.Fragment key= {article.index}>
                     <PostSummary 
@@ -35,7 +36,8 @@ export default function Bookmarks (){
                     />
                 </React.Fragment>
                 )
-            })
+            }) :<Container><Jumbotron className='text-my-dark-blue'><h1>NO BOOKMARKS</h1></Jumbotron></Container>
+
         }
         </>
     )

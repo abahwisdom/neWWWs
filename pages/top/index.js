@@ -3,6 +3,7 @@ import Axios from "axios";
 import React from 'react'
 // import '../../styles/pages.scss'
 import Navigation from '../../components/nav-other'
+import { Jumbotron, Container } from "react-bootstrap";
 
 export default function Top ({articles}){
     
@@ -12,7 +13,7 @@ export default function Top ({articles}){
         <h1 className='mt-auto text-right blog-name'>neWWWs</h1>
         <h4 className='ml-4 text-my-light-blue'>Top News </h4>
         {
-            articles.map(article=>{
+            articles!=='error' ? articles.map(article=>{
                 return(
                  <React.Fragment key= {article.index}>
                     <PostSummary 
@@ -27,18 +28,20 @@ export default function Top ({articles}){
                     />
                 </React.Fragment>
                 )
-            })
+            }) :<Container><Jumbotron className='text-my-dark-blue'><h1>NO NEWS</h1></Jumbotron></Container> 
         }
         </>
     )
 }
 
-export const getServerSideProps= async ()=>{
-    const res= await Axios.get(`https://gnews.io/api/v3/top-news?token=${process.env.NEWS_API_KEY}`);
+Top.getInitialProps= async ()=>{
+    const res= await Axios.get(`https://gnews.io/api/v3/top-news?token=${process.env.NEWS_API_KEY}`)
+    .catch(err=> err);
+    if (!res.data){return {articles: 'error'}}
     return {
-        props:{
+        
             articles: res.data.articles
-        }
+        
     }
         
     
