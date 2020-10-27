@@ -13,7 +13,7 @@ export default function Country ({articles, country}){
         <h4 className=' ml-4 text-my-light-blue'>{
             country=='us' ? 'US News':
             country=='uk' ? 'UK News':
-            country=='ng' ? 'Nigeria News' : 'Other'
+            country=='ng' ? 'Nigeria News' : `Country News (${country.toUpperCase()})`
         } </h4>
 
         {

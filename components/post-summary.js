@@ -20,7 +20,8 @@ export default function PostSummary(props){
                setCurrentBookmarks(JSON.parse(localStorage.getItem('news-bookmarks')))
            }
        }else{
-        localStorage.setItem('news-bookmarks', JSON.stringify([props.article]))
+        localStorage.setItem('news-bookmarks', JSON.stringify([props.article]));
+        setCurrentBookmarks(JSON.parse(localStorage.getItem('news-bookmarks')))
        }
     }
 
@@ -39,6 +40,7 @@ export default function PostSummary(props){
             // console.log(bookmarks);
             // console.log(newBookmarks);
             localStorage.setItem('news-bookmarks', JSON.stringify(newBookmarks));
+            if (newBookmarks.length<1){localStorage.removeItem('news-bookmarks')};
             props.setRender(!props.monitorRender);
         }
      }
