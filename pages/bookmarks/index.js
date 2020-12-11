@@ -36,9 +36,10 @@ export default function Bookmarks (){
                     />
                 </React.Fragment>
                 )
-            }) :<Jumbotron className='mt-4 mr-4 ml-4' style={{background: '#b3d6f6', color:'#0a192f'}}><h1>NO BOOKMARKS</h1></Jumbotron>
+            }) :<Jumbotron className='mt-4 mr-4 ml-4' style={{background: '#64ffda', color:'#0a192f'}}><h1>NO BOOKMARKS</h1></Jumbotron>
 
         }
+        <div className='stars-div'></div>
         </>
     )
 }

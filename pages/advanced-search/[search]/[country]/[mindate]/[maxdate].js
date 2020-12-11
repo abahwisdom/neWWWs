@@ -42,6 +42,7 @@ export default function AdvancedSearch ({articles, search, country}){
                 )
             })
         }
+        <div className='stars-div'></div>
         </>
     )
 }

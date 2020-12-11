@@ -34,6 +34,7 @@ export default function Country ({articles, country}){
                 )
             })
         }
+        <div className='stars-div'></div>
         </>
     )
 }

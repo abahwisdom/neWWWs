@@ -1,5 +1,5 @@
 // Custom Bootstrap override
-$body-bg: #0a192f;
+$body-bg: #000000;
 $body-color: #fff;
 
 $theme-colors: (
@@ -190,4 +190,13 @@ i{
 
 .pointer-parent1, .pointer-parent2{
   width:50%
+}
+
+.stars-div{
+  background-image:url('https://awv3node-homepage.surge.sh/build/assets/stars.svg');
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  z-index:-300
 }

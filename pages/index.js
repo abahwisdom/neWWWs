@@ -16,10 +16,10 @@ export default class Landing extends React.Component {
   render(){
     return (
     <>
-    <Head>
+    {/* <Head>
     <script src="https://use.fontawesome.com/fd44fba7ee.js"></script>
     <title>neWWWs</title>
-    </Head>
+    </Head> */}
 
     <Parallax pages={1.5} ref={ref=>{this.parallax= ref}}>
     <Container>

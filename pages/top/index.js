@@ -30,6 +30,7 @@ export default function Top ({articles}){
                 )
             }) :<Container><Jumbotron className='text-my-dark-blue'><h1>NO NEWS</h1></Jumbotron></Container> 
         }
+        <div className='stars-div'></div>
         </>
     )
 }

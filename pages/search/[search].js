@@ -29,6 +29,7 @@ export default function Search ({articles, search}){
                 )
             })
         }
+        <div className='stars-div'></div>
         </>
     )
 }
