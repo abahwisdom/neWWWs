@@ -10,7 +10,7 @@ export default function Search ({articles, search}){
         <>
         <Navigation/>
         <h1 className='mt-auto text-right blog-name'>neWWWs</h1>
-        <h4 className='ml-4 text-my-light-blue'>Search Results {search ? `for "${search}"`:''} </h4>
+        <h4 className='ml-4 text-my-light-blue oswald'>Search Results {search ? `for "${search}"`:''} </h4>
         {
             articles.map(article=>{
                 return(

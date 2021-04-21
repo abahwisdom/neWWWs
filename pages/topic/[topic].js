@@ -10,7 +10,7 @@ export default function Topic ({articles, topic}){
         <>
         <Navigation/>
         <h1 className='mt-auto text-right blog-name'>neWWWs</h1>
-        <h4 className='ml-4 text-my-light-blue'> {topic ? topic.charAt(0).toUpperCase() + topic.slice(1) : ''} </h4>
+        <h4 className='ml-4 text-my-light-blue oswald'> {topic ? topic.charAt(0).toUpperCase() + topic.slice(1) : ''} </h4>
         {
             articles.map(article=>{
                 return(

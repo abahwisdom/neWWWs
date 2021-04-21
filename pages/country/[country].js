@@ -10,7 +10,7 @@ export default function Country ({articles, country}){
         <>
         <Navigation/>
         <h1 className='mt-auto text-right blog-name'>neWWWs</h1>
-        <h4 className=' ml-4 text-my-light-blue'>{
+        <h4 className=' ml-4 text-my-light-blue oswald'>{
             country=='us' ? 'US News':
             country=='uk' ? 'UK News':
             country=='ng' ? 'Nigeria News' : `Country News (${country.toUpperCase()})`

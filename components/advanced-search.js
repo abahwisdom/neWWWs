@@ -15,13 +15,13 @@ export default function AdvancedSearchForm(){
         const {search, country}= data;
         const mindate= 'none';
         const maxdate= 'none';
-        router.push(`/advanced-search/${search}/${country}/${mindate}/${maxdate}`);
+        router.push(`/advanced-search/${search}/${country}`);
         setSubmitting(false);
     }
 
     return(
         <>
-        <h4 className='text-my-light-blue'>Advanced Search</h4>
+        <h4 className='text-my-light-blue head'>Advanced Search</h4>
         <Form onSubmit={handleSubmit(search)}>
             <Form.Group>
                 <Form.Label>Keyword</Form.Label>

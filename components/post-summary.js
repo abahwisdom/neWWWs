@@ -53,17 +53,17 @@ export default function PostSummary(props){
     return(
         <>
         <div className='oneStory'>
-            <div className='title text-my-light-blue' onClick={viewArticle}>{props.title}</div>
+            <div className='title' onClick={viewArticle}>{props.title}</div>
             <div className='author'>{props.author}</div>
             <div className='date'>{props.date} </div>
             <div className='description text-my-dark-blue'>{props.description}</div>
             <div className='actions'>
-            <div onClick={viewArticle}><i className="fa fa-newspaper-o"></i><span>Read</span>
+            <div onClick={viewArticle}><i className="fa fa-newspaper-o"></i><span className='text-my-green' >Read</span>
             </div>
             {
-                props.delete ? <div className='bookmark' onClick={deleteBookmark} ><i className="fa fa-trash"></i><span >Delete Bookmark</span></div> :
+                props.delete ? <div className='bookmark text-my-green' onClick={deleteBookmark} ><i className="fa fa-trash"></i><span >Delete Bookmark</span></div> :
                 <div className={found ? 'text-my-dark-blue':'text-my-green' } onClick={!found ? bookmark: (e)=>{e.preventDefault()}}><i className="fa fa-bookmark"></i>
-            <span >{!found ? 'Bookmark for Later' : 'Bookmarked!'}</span></div>
+            <span className='oswald' >{!found ? 'Bookmark for Later' : 'Bookmarked!'}</span></div>
             }
             
             </div>

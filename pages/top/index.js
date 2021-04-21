@@ -11,7 +11,7 @@ export default function Top ({articles}){
         <>
         <Navigation/>
         <h1 className='mt-auto text-right blog-name'>neWWWs</h1>
-        <h4 className='ml-4 text-my-light-blue'>Top News </h4>
+        <h4 className='ml-4 text-my-light-blue oswald'>Top News </h4>
         {
             articles!=='error' ? articles.map(article=>{
                 return(

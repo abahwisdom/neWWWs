@@ -16,7 +16,7 @@ export default function Bookmarks (){
         <>
         <Navigation/>
         <h1 className='mt-auto text-right blog-name'>neWWWs</h1>
-        <h4 className='ml-4 text-my-light-blue'>Bookmarks </h4>
+        <h4 className='ml-4 text-my-light-blue oswald'>Bookmarks </h4>
         {
             articles!==undefined && articles!==null ? articles.map(article=>{
                 return(

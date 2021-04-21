@@ -1,5 +1,5 @@
 // Custom Bootstrap override
-$body-bg: #000000;
+$body-bg: #01041e;
 $body-color: #fff;
 
 $theme-colors: (
@@ -20,8 +20,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Nunito';
   // background-image:url('../public/bg-photo.jpg') ;
 }
 
@@ -50,11 +49,17 @@ a {
 .title{
   font-size:20px;
   font-weight:bold;
-  color: $my-light-blue
+  color: $my-light-blue;
+  cursor: pointer;
+
+  &:hover{
+    color: #64ffda;
+  }
+
 }
-.title:hover{
-  color: #E71D36
-}
+// .title:hover{
+//   color: #E71D36
+// }
 .author, .date{
   font-size: 12px;
   font-style: italic;
@@ -93,13 +98,17 @@ i{
 
 .navig{
   position: fixed;
-  right: 10%;
+  // left: 10%;
   z-index: 200;
   top: 44px;
   color: #64ffda;
-  font-family: monospace;
+  font-family: 'Oswald';
+  text-transform: uppercase;
   font-size: 15px;
-  ;
+  background-color: #01041ea6;
+  padding: 10px;
+  border-radius: 6px;
+
 
   *{
     cursor: pointer
@@ -109,10 +118,11 @@ i{
 
 .navig-other{
   color: #64ffda;
-  font-family: monospace;
+  font-family: 'Oswald';
+  text-transform: uppercase;
   font-size: 15px;
-  text-align: right;
-  margin-right: 27px;
+  // text-align: right;
+  margin-left: 27px;
   margin-top: 20px;
   ;
 
@@ -128,14 +138,19 @@ i{
 
 .typical-parent *{
   line-height: 1.5;
-  padding: 5px;
+  padding: 10px;
   color: #ccd6f6;
-  font-family: monospace;
+  font-family: 'Nunito';
+  font-weight: 400;
+  background-color: #01041ea6;
+  border-radius:20px;
 }
 
 
 .blog-name-landing{
-  color: #ccd6f6;
+  color: #64ffda;
+  background-color: #01041ea6;
+
 }
 
 i{
@@ -199,4 +214,21 @@ i{
   height: 100vh;
   top:0;
   z-index:-300
+}
+
+.head{
+  font-family: 'Oswald';
+  text-transform: uppercase;
+}
+
+.text-my-green, .oswald{
+  font-family: 'Oswald';
+  text-transform: uppercase;
+}
+
+.advanced-contain{
+  background: #64ffda12;
+  padding: 20px;
+  // border-radius: 20px;
+  max-width: 700px;
 }
